@@ -8,6 +8,7 @@ import { PolkadotjsWallet } from './polkadotjs-wallet'
 import { PolkaGate } from './polkagate-wallet'
 import { SubWallet } from './subwallet-wallet'
 import { TalismanWallet } from './talisman-wallet'
+import { CopperConnectWallet } from './copper-wallet'
 
 // Export wallets as well for one and done usage
 export {
@@ -20,6 +21,7 @@ export {
   PolkadotjsWallet,
   SubWallet,
   TalismanWallet,
+  CopperConnectWallet
 }
 
 // Add new wallets here
@@ -33,6 +35,7 @@ const supportedWallets = [
   new EnkryptWallet(),
   new PolkadotjsWallet(),
   new AlephZeroWallet(),
+  new CopperConnectWallet(),
 ]
 
 export function getWallets(): Wallet[] {
