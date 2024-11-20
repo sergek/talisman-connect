@@ -11,6 +11,7 @@ import {
   PolkaGate,
   SubWallet,
   TalismanWallet,
+  CopperConnectWallet
 } from '@talismn/connect-wallets'
 
 export function App() {
@@ -31,6 +32,7 @@ export function App() {
           new EnkryptWallet(),
           new PolkadotjsWallet(),
           new AlephZeroWallet(),
+          new CopperConnectWallet(),
         ]}
         triggerComponent={<button>Open Wallets</button>}
       />
